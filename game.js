@@ -63,15 +63,13 @@ function checkAnswer(currentLevel){
         $("body").removeClass("game-over");
     }, 200);
    $("#level-title").text("Game Over!, Press Any Key to Restart")
-   $(document).keydown(function(){
         startOver();
-   });
+  
 }
 }
 
 function startOver(){
     gamePattern = [];
     level = 0;
-    // start = false;
-    nextSequence();
+    start = false;
 }
